@@ -1,10 +1,10 @@
 {
-  "name": "fe-homework-react",
+  "name": "rti-react-homework",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "repository": {
-    "name": "Rocketmiles React FE Seed",
+    "name": "Rocket Travel React FE Seed",
     "type": "git",
     "url": "git://github.com/rocketmiles/react-frontend-homework.git"
   },
