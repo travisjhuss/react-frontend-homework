@@ -3,7 +3,7 @@ import axios from 'axios';
 class HotelResultService {
     get() {
         return axios
-            .get('https://homework-app.rocketmiles.com/fe-homework/rates')
+            .get('http://localhost:8080/rest/rates')
             .then(response => response.data)
             .catch(() => {})
     }
