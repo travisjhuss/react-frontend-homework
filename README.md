@@ -1,5 +1,8 @@
 # Rocketmiles - React Technical Assesment
 
+## Instructions: 
+See also: instructions.pdf
+
 ## Development Frontend server
 
 Run `npm start` for a dev server. Navigate to `http://localhost:1234`. The app will automatically reload if you change any of the source files.
@@ -23,3 +26,6 @@ Java 11
 ####  To Run backend API using Docker
 - Install [docker](https://docs.docker.com/docker-for-mac/install/)
 - `./boot`
+
+#### Instructions: 
+Checkout instructions.pdf
