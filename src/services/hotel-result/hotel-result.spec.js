@@ -5,3 +5,6 @@ describe('HotelResultService', () => {
         expect(HotelResultService).toBeTruthy();
     });
 });
+
+
+

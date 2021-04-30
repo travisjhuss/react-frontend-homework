@@ -6,6 +6,7 @@ Styling
 
 Testing
     [ ] - Sort function
+    [ ] - Reset Button
 
 Components
     [ ] - Search/Sort
@@ -18,4 +19,5 @@ Features
     [ ] - User Message for no results
         [ ] - Hotel name is not found on list
         [ ] - No data from endpoint
+    [ ] - Reset Button
 
