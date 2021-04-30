@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import sortResultsService from '../../services/sort-results/sort-results.service';
 import HotelList from '../HotelList/HotelList';
 
@@ -15,11 +15,11 @@ export default function Filters({hotels}) {
         <input type="text" className="input" maxLength={1} />
         Price
         <select name="sort" className="select" onChange={(e) => setSortByValue(e.target.value)}>
-          <option value="">Recommended</option>
+          <option value="rating">Recommended</option>
           <option value="ascending">Price low-to-high</option>
           <option value="descending">Price high-to-low</option>
         </select>
-        <button className="button">Reset</button>
+        <button className="button" onClick={() => setSortByValue('reset')}>Reset</button>
       </div>
     </div>
     <HotelList sortedHotels={sortedHotels}/>
