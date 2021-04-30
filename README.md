@@ -10,6 +10,8 @@ Run `npm start` for a dev server. Navigate to `http://localhost:1234`. The app w
 ## Running unit tests
 
 Run `npm test` to execute the unit tests via [Jest](https://jestjs.io/) and [Enzyme](https://airbnb.io/enzyme/).
+write read me explaining what and why
+
 
 ## Development Backend API server
 
