@@ -5,19 +5,20 @@ Styling
     [ ] - Hotel Card
 
 Testing
-    [ ] - Sort function
-    [ ] - Reset Button
+    [x] - Sort function
+    [ ] - Filter function
 
 Components
     [ ] - Search/Sort
-    [ ] - Hotel Results
+    [x] - Hotel Results
 
 Features
-    [ ] - Sort by Hotel Name
-    [ ] - Sort by Price in Ascending order
-    [ ] - Sort by Price in Descending order
+    [x] - Sort by rating default
+    [x] - Sort by Price in Ascending order
+    [x] - Sort by Price in Descending order
+    [ ] - Filter
     [ ] - User Message for no results
         [ ] - Hotel name is not found on list
         [ ] - No data from endpoint
-    [ ] - Reset Button
+    [x] - Reset Button
 
