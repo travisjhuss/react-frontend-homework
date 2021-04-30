@@ -19,9 +19,8 @@ const App = () => {
     return (
         <div className="app-container">
             <div className="content">
-                <Filters/>
-
-                <HotelList hotels={hotels}/>
+                {/* Filters will sort data and send to HotelList component */}
+                <Filters hotels={hotels}/>
             </div>
         </div>
     )

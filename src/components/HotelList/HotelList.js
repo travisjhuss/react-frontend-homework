@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-export default function HotelList({hotels}) {
+export default function HotelList({sortedHotels}) {
   return (
     <div className="hotel-list">
-      {hotels.map((hotel) => (
+      {sortedHotels.map((hotel) => (
         <div className="hotel-card" key={hotel.id}>
           <div
             className="image"
