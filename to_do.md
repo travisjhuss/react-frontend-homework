@@ -6,6 +6,7 @@ Styling
 
 Testing
     [ ] - Sort function
+    [ ] - Filter function
     [ ] - Reset Button
 
 Components
@@ -13,9 +14,10 @@ Components
     [ ] - Hotel Results
 
 Features
-    [ ] - Sort by Hotel Name
+    [ ] - Sort by id default
     [ ] - Sort by Price in Ascending order
     [ ] - Sort by Price in Descending order
+    [ ] - Filter
     [ ] - User Message for no results
         [ ] - Hotel name is not found on list
         [ ] - No data from endpoint

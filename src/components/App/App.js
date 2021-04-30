@@ -12,6 +12,7 @@ const App = () => {
         })
     }, []);
 
+    console.log('hotels:', hotels)
     return (
         <div className="app-container">
             <div className="content">
