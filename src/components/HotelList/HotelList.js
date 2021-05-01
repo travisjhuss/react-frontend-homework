@@ -3,7 +3,8 @@ import React from 'react';
 export default function HotelList({ sortedHotels }) {
   return (
     <div className="hotel-list">
-      {!sortedHotels[0] && <h2>Sorry, your search has no results.</h2>}
+      {/* Checks if sortedHotels array is empty, if true, return a message to user */}
+      {!sortedHotels[0] && <div className="results-message">Sorry, your search has no results.</div>}
       {sortedHotels.map((hotel) => (
         <div className="hotel-card" key={hotel.id}>
           <div

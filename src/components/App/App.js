@@ -14,6 +14,7 @@ const App = () => {
         })
     }, []);
 
+    console.log(hotels);
     return (
         <div className="app-container">
             <div className="content">

@@ -19,6 +19,6 @@ Features
     [x] - Filter
     [x] - User Message for no results
         [x] - Hotel name is not found on list
-        [ ] - No data from endpoint
+        [x] - No data from endpoint 
     [x] - Reset Button
 

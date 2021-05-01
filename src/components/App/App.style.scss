@@ -72,6 +72,13 @@
   > *:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  .results-message {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 20px;
+      color: #ff4f21;
+  }
 }
 
 .hotel-card {
@@ -86,7 +93,7 @@
     min-width: 180px;
     height: 180px;
     background-size: cover;
-    background-color: #68749b;
+    background-color: #8189a3;
   }
 
   .hotel-details {
@@ -114,8 +121,8 @@
   .rating-score {
     font-size: 18px;
     font-weight: 400;
-    border-radius: 50%;
-    padding: 5px;
+    border-radius: 50px;
+    padding: 5px 10px;
     color: #fff;
     background-color: #ff4f21;
   }

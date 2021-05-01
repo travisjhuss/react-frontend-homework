@@ -7,7 +7,9 @@ export default function Filters({ hotels }) {
   const [sortByValue, setSortByValue] = useState('');
   const [filterQuery, setFilterQuery] = useState('');
 
+  // First it will filter hotels based on input value
   const filteredHotels = filterResultsService(hotels, filterQuery);
+  // Then will sort hotels based on select value
   const sortedHotels = sortResultsService(filteredHotels, sortByValue);
 
   return (
@@ -44,6 +46,7 @@ export default function Filters({ hotels }) {
           </button>
         </div>
       </div>
+      {/* Pass filtered and sorted hotels to HotelList for display */}
       <HotelList sortedHotels={sortedHotels} />
     </>
   );
