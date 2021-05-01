@@ -7,12 +7,6 @@ export default function FilterResultsService(arrayOfObjects, filterQuery) {
     const filterResult = arrayOfObjects.filter((hotel) =>
       hotel.hotelStaticContent.name.toLowerCase().includes(filterQuery)
     );
-    if (!filterResult[0]) {
-      // if no results, return message to user
-      return 'Sorry, that search has no matching hotels.';
-    } else {
-      // else return new array
-      return filterResult;
-    }
+    return filterResult;
   }
 }

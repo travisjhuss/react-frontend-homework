@@ -103,10 +103,7 @@ describe('FilterResultsService', () => {
 
   // given (a sample list of hotels matches hotel data)
   // when (given a filterQuery that has no matches)
-  it('will return message if no matches to filterQuery', () => {
-    // then
-    expect(FilterResultsService(testArrayOfHotels, 'z')).toEqual(
-      'Sorry, that search has no matching hotels.'
-    );
+  it('will empty array if no matches to filterQuery', () => {
+    expect(FilterResultsService(testArrayOfHotels, 'z')).toEqual([]);
   });
 });
