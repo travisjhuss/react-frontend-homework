@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 export default function HotelList({ sortedHotels }) {
   return (
@@ -28,6 +28,7 @@ export default function HotelList({ sortedHotels }) {
               {hotel.lowestAveragePrice.amount}
             </span>
             <span className="rewards">{hotel.rewards.miles} miles</span>
+            <span className="rewards">{hotel.hotelStaticContent.rating}</span>
             <button className="button">Select</button>
           </div>
         </div>
