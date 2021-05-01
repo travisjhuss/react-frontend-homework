@@ -1,8 +1,8 @@
 Travis Huss To Do List
 
 Styling
-    [ ] - Search/Sort
-    [ ] - Hotel Card
+    [x] - Search/Sort
+    [x] - Hotel Card
 
 Testing
     [x] - Sort function

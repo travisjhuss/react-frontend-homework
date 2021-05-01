@@ -17,18 +17,25 @@ export default function HotelList({ sortedHotels }) {
             <div className="location">
               {hotel.hotelStaticContent.neighborhoodName}
             </div>
-            <span className="rewards">{hotel.hotelStaticContent.rating}</span>
+            <div className="rating">
+              Rating:{' '}
+              <span className="rating-score">
+                {hotel.hotelStaticContent.rating}
+              </span>
+            </div>
           </div>
           <div className="price-details">
             <span className="price">
               <span
+                className="currency-symbol"
                 dangerouslySetInnerHTML={{
                   __html: hotel.lowestAveragePrice.symbol,
                 }}
               ></span>
               {hotel.lowestAveragePrice.amount}
             </span>
-            <span className="rewards">{hotel.rewards.miles} miles</span>
+            <div className="rewards">{hotel.rewards.miles}</div>
+            <span className="rewards-caption">miles earned</span>
             <button className="button">Select</button>
           </div>
         </div>
