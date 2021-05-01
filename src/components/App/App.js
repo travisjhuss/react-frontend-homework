@@ -4,7 +4,6 @@ import './App.style.scss'
 import hotelResultService from '../../services/hotel-result/hotel-result.service';
 // new components for dryer code
 import Filters from '../Filters/Filters';
-import HotelList from '../HotelList/HotelList';
 
 const App = () => {
     const [hotels, setHotels] = useState([]);
@@ -15,7 +14,6 @@ const App = () => {
         })
     }, []);
 
-    console.log('hotels:', hotels)
     return (
         <div className="app-container">
             <div className="content">

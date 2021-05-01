@@ -36,7 +36,7 @@ const testArrayOfHotels = [
   {
     id: 3,
     hotelStaticContent: {
-      name: 'CC Hotel Name',
+      name: 'CC3 Hotel Name',
       neighborhoodName: 'Magnificent Mile',
       mainImage: {
         url: 'https://www.website.com/photo.png',

@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-export default function HotelList({sortedHotels}) {
+export default function HotelList({ sortedHotels }) {
   return (
     <div className="hotel-list">
+      {!sortedHotels[0] && <h2>Sorry, your search has no results.</h2>}
       {sortedHotels.map((hotel) => (
         <div className="hotel-card" key={hotel.id}>
           <div
@@ -27,6 +28,7 @@ export default function HotelList({sortedHotels}) {
               {hotel.lowestAveragePrice.amount}
             </span>
             <span className="rewards">{hotel.rewards.miles} miles</span>
+            <span className="rewards">{hotel.hotelStaticContent.rating}</span>
             <button className="button">Select</button>
           </div>
         </div>
