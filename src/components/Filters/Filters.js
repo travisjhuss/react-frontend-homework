@@ -14,7 +14,7 @@ export default function Filters({ hotels }) {
     <>
       <div>
         <div className="filters">
-          Hotel name
+          Filter by Hotel name
           <input
             type="text"
             className="input"
@@ -22,7 +22,7 @@ export default function Filters({ hotels }) {
             value={filterQuery}
             onChange={(e) => setFilterQuery(e.target.value)}
           />
-          Price
+          Sort by
           <select
             name="sort"
             className="select"
