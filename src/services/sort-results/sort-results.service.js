@@ -1,7 +1,7 @@
 export default function SortResultsService(arrayOfObjects, sortByValue) {
-  return arrayOfObjects.sort((a, b) => {
-    // will check sortByValue and will sort array by amount accordingly 
-    // based on whether 'ascending' or 'descending'. 
+  const sortResults = arrayOfObjects.sort((a, b) => {
+    // will check sortByValue and will sort array by amount accordingly
+    // based on whether 'ascending' or 'descending'.
     // if no value given to sortByValue, will sort by rating
     if (sortByValue === 'ascending') {
       return a.lowestAveragePrice.amount > b.lowestAveragePrice.amount ? 1 : -1;
@@ -11,4 +11,5 @@ export default function SortResultsService(arrayOfObjects, sortByValue) {
       return b.hotelStaticContent.rating > a.hotelStaticContent.rating ? 1 : -1;
     }
   });
+  return sortResults;
 }
