@@ -1,19 +1,19 @@
 import testArrayOfHotels from '../testArrayOfHotels';
-import FilterResultsService from './filter-results.service';
+import filterResultsService from './filter-results.service';
 
-describe('FilterResultsService', () => {
+describe('filterResultsService', () => {
   // given (a sample list of hotels matches hotel data)
   // when (given no filterQuery)
   it('will return same array if no filterQuery', () => {
     // then
-    expect(FilterResultsService(testArrayOfHotels)).toEqual(testArrayOfHotels);
+    expect(filterResultsService(testArrayOfHotels)).toEqual(testArrayOfHotels);
   });
 
   // given (a sample list of hotels matches hotel data)
   // when (given a single letter as filterQuery)
   it('will return array of objects matching letter b', () => {
     // then
-    expect(FilterResultsService(testArrayOfHotels, 'b')).toEqual([
+    expect(filterResultsService(testArrayOfHotels, 'b')).toEqual([
       {
         id: 2,
         hotelStaticContent: {
@@ -55,7 +55,7 @@ describe('FilterResultsService', () => {
   // when (given two letters as filterQuery)
   it('will return array of objects matching letter ab', () => {
     // then
-    expect(FilterResultsService(testArrayOfHotels, 'ab')).toEqual([
+    expect(filterResultsService(testArrayOfHotels, 'ab')).toEqual([
       {
         id: 2,
         hotelStaticContent: {
@@ -80,7 +80,7 @@ describe('FilterResultsService', () => {
   // when (given a number as filterQuery)
   it('will work when number is filterQuery', () => {
     // then
-    expect(FilterResultsService(testArrayOfHotels, 3)).toEqual([
+    expect(filterResultsService(testArrayOfHotels, 3)).toEqual([
       {
         id: 3,
         hotelStaticContent: {
@@ -104,6 +104,6 @@ describe('FilterResultsService', () => {
   // given (a sample list of hotels matches hotel data)
   // when (given a filterQuery that has no matches)
   it('will empty array if no matches to filterQuery', () => {
-    expect(FilterResultsService(testArrayOfHotels, 'z')).toEqual([]);
+    expect(filterResultsService(testArrayOfHotels, 'z')).toEqual([]);
   });
 });

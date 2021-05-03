@@ -1,4 +1,4 @@
-export default function FilterResultsService(arrayOfObjects, filterQuery) {
+export default function filterResultsService(arrayOfObjects, filterQuery) {
   // if no filterQuery is given, it will return the array argument
   if (!filterQuery) {
     return arrayOfObjects;

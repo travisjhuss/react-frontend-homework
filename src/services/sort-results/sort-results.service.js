@@ -1,4 +1,4 @@
-export default function SortResultsService(arrayOfObjects, sortByValue) {
+export default function sortResultsService(arrayOfObjects, sortByValue) {
   const sortResults = arrayOfObjects.sort((a, b) => {
     // will check sortByValue and will sort array by amount accordingly
     // based on whether 'ascending' or 'descending'.
